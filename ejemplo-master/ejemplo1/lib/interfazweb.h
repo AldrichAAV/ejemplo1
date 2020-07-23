@@ -14,12 +14,12 @@ public:
     char GETresponse[2048];
     conexionWeb(const char *_SSID, const char *_PASSWORD)
     {
-        WiFi.begin(_SSID, _PASSWORD);
+        /*WiFi.begin(_SSID, _PASSWORD);
         while (WiFi.status() != WL_CONNECTED)
         {
             delay(500);
             Serial.print("...");
-        }
+        }*/
     }
 
     bool webPOST(StaticJsonDocument<512> _post, String _server_URL)
