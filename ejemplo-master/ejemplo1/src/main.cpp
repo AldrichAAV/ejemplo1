@@ -21,8 +21,8 @@ StaticJsonDocument<512> horaActual;
 StaticJsonDocument<512> post_sembradios;
 StaticJsonDocument<1024> get_ejemplo;
 
-const char *urlPost = "http://192.168.0.10/esp32/public/api/registro";
-const char *geturl = "http://192.168.0.10/app/public/api/resetpassword";
+const char *urlPost = "http://192.168.0.11/esp32/public/api/registro";
+const char *geturl = "http://192.168.0.11/app/public/api/resetpassword";
 
 void setup()
 {
@@ -38,7 +38,7 @@ int sumatoria = 0;
 int i;
 void loop()
 {
-for (i=201; i<=250; i++){
+for (i=1; i<=250; i++){
 #ifndef ESP32_RTOS
   ArduinoOTA.handle();
 #endif
